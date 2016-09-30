@@ -4,110 +4,20 @@
   <div class="panel panel-default">
     <div class="panel-body">
 
+        {% for post in site.posts %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
 
-        <div class="panel-item panel-item-left">
-            <div class="panel-item-container">
-                <img src="assets/images/rogervoice_app_intro.jpg" />
+                {% if loopindex == 1 %}
+                    <div class="panel-item panel-item-left">
+                        <div class="panel-item-container">{{ post }}</div>
+                    </div>
+                {% else %}
+                    <div class="panel-item panel-item-right">
+                        <div class="panel-item-container">{{ post }}</div>
+                    </div>
+                {% endif %}
 
-                <h2>RogerVoice - iOS App</h2>
-
-                <h5 class="project-date">2016</h5>
-                <h5>
-                    My job was to make the application less buggy in a first time and then, develop new features.<br/>
-                    <br>
-                    Cool stuff: Use of <strong>VOIP calls</strong>, <strong>In-App Purchases</strong>, <strong>Push notifications</strong>.<br>
-                    <br>
-                    In few words... RogerVoice provides a means for the deaf and hard-of-hearing to carry out phone conversations using Text-Call technologies.<br>
-        		</h5>
-
-                <h5><i class="fa fa-mobile"></i>&nbsp;&nbsp;<a href="https://itunes.apple.com/app/rogervoice/id1033113354?mt=8">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
-                <br style="clear: both" />
-            </div>
-        </div>
-
-
-        <div class="panel-item panel-item-right">
-            <div class="panel-item-container">
-                <img src="assets/images/comeon_new_event_view.png" class="floating-right" />
-
-                <h2>ComeOn - iOS App</h2>
-
-                <h5 class="project-date">2015 - 2017</h5>
-                <h5>
-                    My job was to build the iOS application from scratch with <a href="https://github.com/kaliganie">Kaliganie</a>.<br>
-                    <br>
-                    Nice stuff: Use of <strong>CoreLocation</strong> to track the user position and display all the people around him on a map (MapKit).<br>
-                    <br>
-                    End-of-school project. Our goal was to allow people creating events very fast. <br>
-                </h5>
-
-                <h5><i class="fa fa-globe"></i>&nbsp;&nbsp;<a href="http://comeon.io/">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
-                <br style="clear: both" />
-            </div>
-        </div>
-
-
-        <div class="panel-item panel-item-left">
-            <div class="panel-item-container">
-                <img src="assets/images/dcremote_view.jpeg" />
-
-                <h2>DCRemote - iOS App</h2>
-
-                <h5 class="project-date">2015</h5>
-                <h5>
-                    I reworked the application structure, implemented design and new features. (With <a href="https://github.com/pauljarysta">pauljarysta</a> and <a href="https://github.com/grifas">grifas</a>)<br>
-                    <br>
-                    Nice stuff: <strong>Collaborations</strong> with a lot of people & advanced <strong>Agile Software Development</strong>.<br>
-                    <br>
-                    In few words... DCRemote is an app for the clients of Etix Everywhere. It allows them to manage their datacenter perfectly and have a great overview of what is going on inside.<br>
-                </h5>
-
-                <h5><i class="fa fa-globe"></i>&nbsp;&nbsp;<a href="https://www.etixeverywhere.com/">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
-                <br style="clear: both" />
-            </div>
-        </div>
-
-
-        <div class="panel-item panel-item-right">
-            <div class="panel-item-container">
-                <img src="assets/images/waza_view.png" />
-
-                <h2>Waza Education (iOS + Android, Ionic)</h2>
-
-                <h5 class="project-date">2015</h5>
-                <h5>
-                    I built this app for the start-up Waza Education.<br>
-                    <br>
-                    Nice stuff: <strong>Whole applications lead</strong>, <strong>free to choose</strong> any technology, first <strong>hybrid app</strong> (A single angular code shared for both the iOS and Android application).<br>
-                    <br>
-                    In few words... Waza is a platform that matches the gap between universities and companies by providing the ecosystem to collaborate on common project.<br>
-                </h5>
-
-                <h5><i class="fa fa-globe"></i>&nbsp;&nbsp;<a href="http://www.waza.education/">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
-                <br style="clear: both" />
-            </div>
-        </div>
-
-
-        <div class="panel-item">
-            <div class="panel-item-container">
-
-                <h2>Agoraa (Android)</h2>
-
-                <h5 class="project-date">2013</h5>
-                <h5>
-                    I made my first mobile application with <a href="https://github.com/Dewep">Dewep</a>, Victor Thiry and Kévin Eby.<br>
-                    <br>
-                    Final result not as good as expected... but here is born my ♥️ for mobile!<br>
-                    <br>
-                    In few words... Agoraa is a platform which boosts the tourism, culture and business areas in cities.<br>
-                </h5>
-
-                <h5><i class="fa fa-globe"></i>&nbsp;&nbsp;<a href="http://nancy.agoraa.me/">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
-                <br style="clear: both" />
-            </div>
-        </div>
-
+        {% endfor %}
 
     </div>
   </div>

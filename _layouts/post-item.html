@@ -1,0 +1,12 @@
+{% if page.image-url %}
+	<img src="{{ page.image-url }}" />
+{% endif %}
+
+<h2>{{ page.title }}</h2>
+
+<h5 class="project-date">{{ page.time }}</h5>
+<h5>{{ content }}</h5>
+
+<h5><i class="fa fa-{{ page.learn-more-type}}"></i>&nbsp;&nbsp;<a href="{{ page.learn-more-url }}">Learn more <i style="font-size:12px;"class="fa fa-chevron-right" aria-hidden="true"></i></a></h5>
+
+<br style="clear: both" />
