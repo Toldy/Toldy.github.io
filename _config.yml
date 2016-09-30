@@ -10,7 +10,7 @@ port: 3000
 safe: true
 
 
-# edit here to achieve your personal greatness
+# Achieve your personal greatness
 url: http://toldy.github.io/
 baseurl: ""
 title: Julien Colin
@@ -24,7 +24,6 @@ linkedin: colinjulien
 stackoverflow: users/2618071/toldy
 #Comment out if you don't want disqus
 # disqus: username
-# google_analytics: UA-69391421-1
 
 
 # needed for travis-ci build
