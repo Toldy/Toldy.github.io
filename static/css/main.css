@@ -48,6 +48,9 @@ body {
     color: #ffffff;
     opacity: 0.65;
 }
+.navbar-right {
+    float: right !important;
+}
 /* Custom page CSS
 -------------------------------------------------- */
 
@@ -57,7 +60,7 @@ body {
     text-align: center;
 }
 nav .container {
-    width: 800px;
+    max-width: 800px;
 }
 .container .text-muted {
     margin: 20px 0;
@@ -149,14 +152,15 @@ div.footer {
     width: 100%;
 }
 .panel-item img {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    width: 40%;
     box-shadow: 1px 1px 12px #555;
 }
 .panel-item-container {
     color: #333333;
     margin: auto;
     width: 800px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .panel-item-left img {
     float: left;
@@ -168,4 +172,43 @@ div.footer {
 .panel-item-right img {
     float: right;
     margin-left: 44px
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .panel-item img {
+        width: 80%;
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .panel-item-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    nav .container {
+        width: 90%;
+    }
+
+
+    .panel-item-container {
+        width: 90%;
+        text-align: center;
+    }
+    .navbar-header {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+    }
+     .panel-default .project-date  {
+        text-align: center !important;
+    }
+}
+
+.navbar-nav>li {
+    float: left;
 }
